@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "accounts",
+    "pages",
 ]
 
 MIDDLEWARE = [
@@ -120,4 +121,4 @@ STATIC_URL = "static/"
 AUTH_USER_MODEL = "accounts.CustomUser"
 
 LOGIN_REDIRECT_URL = "home"
-LOGIN_REQUIRED_URL = "home
+LOGIN_REQUIRED_URL = "home"
