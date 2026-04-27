@@ -4,10 +4,10 @@
 {% block title %}Ro'yxatdan o'tish{% endblock title %}
 
 {% block content %}
-<h2>Ro'yxatdan o'tish</h2>
-<form method="post">
+<h2 class="text-center">Ro'yxatdan o'tish</h2>
+<form method="post" class="w-50 mx-auto mt-2 mb-5">
     {% csrf_token %}
     {{ form|crispy }}
-    <button type="submit" class="btn btn-primary">Ro'yxatdan o'tish</button>
+    <button type="submit" class="d-block btn btn-primary mx-auto">Ro'yxatdan o'tish</button>
 </form>
 {% endblock content %}

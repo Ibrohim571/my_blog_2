@@ -4,10 +4,10 @@
 {% block title %}Kirish{% endblock title %}
 
 {% block content %}
-<h2>Saytga kirish</h2>
-<form method="post">
+<h2 class="text-center">Saytga kirish</h2>
+<form method="post" class="w-50 mx-auto mt-2 mb-5">
     {% csrf_token %}
     {{ form|crispy }}
-    <button type="submit" class="btn btn-primary">Kirish</button>
+    <button type="submit" class="d-block btn btn-primary mx-auto">Kirish</button>
 </form>
 {% endblock content %}
